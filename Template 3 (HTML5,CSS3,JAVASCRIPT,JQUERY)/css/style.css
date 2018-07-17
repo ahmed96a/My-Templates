@@ -1,0 +1,656 @@
+/* Start Our Framework */
+
+.container
+{
+    width: 1000px;
+    margin: auto
+}
+
+.overlay
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5)
+}
+
+.button
+{
+    background: transparent;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 12px 55px;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    font-size: 17px
+}
+
+.inactive
+{
+    display: none
+}
+
+/* End Our Framework */
+
+/****************************************************************/
+
+/*                  Start Header                        */
+
+header
+{
+    background: url('../imgs/cover.jpg');
+    background-size: cover;
+    color: white;
+    position: relative
+}
+
+    /*    Start nav   */
+
+header nav
+{
+    padding-top: 1px; /* the margin of nav h4 collapses and push down the nav and the header down by the value of the margin so we use paffing-top: 1px or using overflow: auto or hidden to solve that issue */
+        
+    overflow: auto;
+}
+
+header nav h4
+{
+    float: left;
+    margin-left: 150px;
+    font-weight: normal
+}
+
+header nav h4 span
+{
+    color: #ea5a0c;;
+    font-weight: bold
+}
+
+header nav ul
+{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 23px;
+    margin-left: 10px;
+    margin-right: 150px;
+    cursor: pointer
+}
+
+header nav ul li
+{
+    width: 25px;
+    border-top: 2px solid white;
+    margin-bottom: 6px;
+}
+
+header nav h5
+{
+    float: right
+}
+
+
+    /*    End nav       */
+/*****************************/
+    /*    Start .head   */
+
+header .head
+{
+    position: relative;
+    text-align: center
+}
+
+header .head h1
+{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+header .head h1 span
+{
+    color: #ea5a0c;;
+}
+
+header .head p
+{
+    font-size: 20px;
+    margin-bottom: 40px
+}
+
+header .head button:first-of-type
+{
+    margin-left: 50px
+}
+
+header .head button:last-of-type
+{
+    margin-left: 25px
+}
+
+header .head button:hover
+{
+    cursor: pointer;
+    background-color: #ea5a0c;
+}
+
+/*
+header .container > span:last-child
+{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0px 7px 3px;
+    transition: all 0.5s
+}
+*/
+
+header .container > span:last-child
+{
+    position: absolute;
+    transition: all 0.5s
+}
+
+/*
+header .container > span:last-child:hover
+{
+    cursor: pointer;
+    background-color: #ea5a0c;
+}
+*/
+
+header .container > span:last-child i
+{
+    transition: all 0.5s
+}
+
+header .container > span:last-child i:hover
+{
+    cursor: pointer;
+    color: #ea5a0c;
+}
+
+    /*    End .head     */
+
+/*                  End Header                  */
+
+/******************************************************************/
+
+/*                  Start Features              */
+
+.features
+{
+    padding-top: 70px;
+    padding-bottom: 40px
+}
+
+.features section
+{
+    display: inline-block;
+    text-align: center;
+    width: 24%
+}
+
+.features section i
+{
+    color: #ea5a0c;
+    border: 1px solid #a89494;
+    border-radius: 50%;
+    padding: 40px;
+    transition: all 0.5s
+}
+
+.features section:nth-of-type(3) i
+{
+    padding: 40px 54px;
+}
+
+.features section i:hover
+{
+    background-color: #ea5a0c;
+    color: white
+}
+
+.features section h4
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: #181a1b;
+}
+
+.features section p
+{
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+
+/*                  End Features                */
+
+/*                  Start Subscribe                */
+
+.subscribe
+{
+    background: url('../imgs/c1.jpg');
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    text-align: center
+}
+
+.subscribe input[type="email"]
+{
+    margin-top: 125px;
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: -15px
+}
+
+.subscribe input[type="submit"]
+{
+    margin-top: 125px;
+    background-color: #ea5a0c;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer
+}
+
+/*                  End Subscribe                */
+
+/**************************************************************/
+
+/*                  Start OurWork                */
+
+.our-work
+{
+    padding: 60px 0;
+    text-align: center
+}
+
+.our-work h1
+{
+    margin-top: 0px;
+    font-weight: normal;
+    color: #505253;
+    text-transform: uppercase
+}
+
+.our-work h1 span
+{
+    color: #ea5a0c
+}
+
+.our-work p
+{
+    color: #7b5f5f;
+    margin-bottom: 50px
+}
+
+.our-work .work
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px
+}
+
+.our-work .work section
+{
+    width: 32%;
+    height: 360px;
+    margin-bottom: 20px;
+    position: relative
+
+}
+
+.our-work .work section img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px
+}
+
+.our-work .work section .overlay
+{
+    background-color: rgba(234, 90, 12, 0.6);
+    border-radius: 10px
+}
+
+.our-work .work section .overlay h2
+{
+    color: white;
+    font-weight: normal;
+    margin-top: 80px
+}
+
+.our-work .work section .overlay p
+{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.our-work .work section .overlay button:hover
+{
+    background-color: white;
+    color: #ea5a0c;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.our-work .work section:hover div
+{
+    display: block
+}
+
+.our-work button
+{
+    color: #5d5b5b;
+    border: 1px solid #d1cece;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 50px
+}
+
+.our-work button:hover
+{
+    cursor: pointer;
+    background-color: #ea5a0c;
+    color: white
+}
+
+/*                  End OurWork                */
+
+/**************************************************************/
+
+/*                  Start Testimoniales                */
+
+
+.testi
+{
+    background: url('../imgs/c2.png');
+    background-size: 100% 100%;
+    position: relative;
+    height: 400px;
+    color: white;
+    text-align: center
+}
+
+.testi .overlay
+{
+    background-color: rgba(49, 55, 61, 0.8)
+}
+
+.testi .container
+{
+    position: relative
+}
+
+.testi section img
+{
+    position: relative;
+    width: 129px;
+    height: 138px;
+    border-radius: 50%;
+    top: 75px
+}
+
+.testi section p
+{
+    margin-top: 95px
+}
+
+.testi i
+{
+    position: absolute;
+    line-height: 400px
+}
+
+.testi i:hover
+{
+    cursor: pointer
+}
+
+.testi i:nth-of-type(1)
+{
+    right: 0
+}
+
+.testi i:nth-of-type(2)
+{
+    left: 0;
+    display: none
+}
+
+/*                  End Testimoniales                */
+
+/**************************************************************/
+
+/*                  Start OurTeam                */
+
+.our-team
+{
+    padding: 60px 0;
+    text-align: center
+}
+
+.our-team h1
+{
+    margin-top: 0px;
+    font-weight: normal;
+    color: #505253;
+    text-transform: uppercase
+}
+
+.our-team h1 span
+{
+    color: #ea5a0c
+}
+
+.our-team .container > p
+{
+    color: #7b5f5f;
+    margin-bottom: 50px
+}
+
+.our-team .members
+{
+    overflow: auto
+}
+
+.our-team .members section
+{
+    width: 24%;
+    float: left;
+    text-align: center
+}
+
+.our-team .members section:not(:nth-of-type(4))
+{
+    margin-right: 1.33%
+}
+
+.our-team .members section .img
+{
+    position: relative;
+    height: 280px
+}
+
+.our-team .members section .img img
+{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.our-team .members section h2
+{
+    font-weight: normal;
+    color: #afafaf
+}
+
+.our-team .members section i
+{
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #afafaf
+        
+}
+
+.our-team .members section p
+{
+    font-size: 15px;
+    color: #afafaf
+}
+
+
+/*                  End OurTeam                */
+
+/**************************************************************/
+
+/*                  Start Contact                */
+
+.contact
+{
+    background: url('../imgs/c3.png');
+    background-size: 100% 100%;
+    height: 600px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px
+}
+
+.contact .overlay
+{
+    background-color: rgba(49, 55, 61, .9)
+}
+
+.contact h1
+{
+    margin-top: 70px;
+    font-weight: normal
+}
+
+.contact h1 span
+{
+    color: #ea5a0c
+}
+
+.contact p
+{
+    margin-bottom: 75px;
+    line-height: 2
+}
+
+.contact form input
+{
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 350px
+}
+
+.contact form input[type="email"]
+{
+    margin-right: 30px
+}
+
+.contact form textarea
+{
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 30px
+}
+
+.contact form button
+{
+    float: left;
+    background-color: #ea5a0c;
+    border: none;
+    margin-left: 90px;
+    transition: all 0.5s
+}
+
+.contact form button:hover
+{
+    cursor: pointer;
+    border: 1px solid white
+}
+
+.contact form .links
+{
+    float: right;
+    margin-right: 90px
+}
+
+.contact form .links i
+{
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.contact form .links i:nth-of-type(1)
+{
+    background-color: #3939db
+}
+
+.contact form .links i:nth-of-type(2)
+{
+    background-color: deepskyblue
+}
+
+.contact form .links i:nth-of-type(3)
+{
+    background-color: red
+}
+
+/*                  End Contact                */
+
+/**************************************************************/
+
+/*                  Start Footer                */
+
+footer
+{
+    background-color: #3b434c;
+    overflow: auto
+}
+
+footer h4
+{
+    color: white;
+    font-weight: normal;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+footer h4:first-child
+{
+    float: left
+}
+
+footer h4:last-child
+{
+    float: right;
+    margin-top: 5px
+}
+
+footer h4 span
+{
+    color: red;
+    font-size: 25px
+}
+
+/*                  Start Footer                */
