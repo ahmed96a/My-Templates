@@ -1,0 +1,541 @@
+/* Global */
+*
+{
+    box-sizing: border-box
+}
+
+body
+{
+    font-family: Times New Roman
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+ul li { display: inline-block }
+
+h1, h2, h3
+{
+    font-weight: normal;
+    color: #3A3838
+}
+
+p { color: #9B9B9B }
+
+/* Global */
+
+/* My FrameWork */
+
+.container
+{
+    width: 1000px;
+    margin: auto
+}
+
+.clear
+{
+    clear: both
+}
+
+.over
+{
+    background-color: rgba(26,188,156,0.8);
+    color: white;
+    text-align: center;
+    line-height: 170px;
+    display: none
+}
+
+.special:after
+{
+    content: "";
+    width: 40px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    display: block
+}
+
+.overit
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; /*because the father if has padding the overlay will not cover it all*/
+    top: 0;
+    bottom: 0;
+    top: 0
+}
+
+.hr
+{
+    color: #DDD9D9 !important;
+    margin: 20px 0 40px
+}
+
+/* see the last video of the course to know why we add min-width to the main clases  */
+.cover, .services, .team, .testi, .project, .footer
+{
+    min-width: 1000px /* it should be min-width and should it's value like the container  */
+}
+
+/* My FrameWork */
+
+/* Start Cover */
+
+.cover
+{
+    background-image: url("../img/cover.jpg");
+    background-size: cover;
+    position: relative
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Start Navbar */
+
+.cover nav .container { overflow: auto }
+
+.cover nav h2
+{
+    margin: 15px 0 0;
+    float: left;
+    color: white
+}
+
+.cover nav ul
+{
+    margin: 15px 0 0;
+    float: right
+}
+
+.cover nav ul li
+{
+    margin-left: 20px;
+    text-transform: uppercase
+}
+
+.cover nav ul li a
+{
+    text-decoration: none;
+    color: white
+}
+
+.cover nav ul li a:hover , .cover nav ul .navactive a
+{
+    color: #1ABB9A;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1ABB9A
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.cover header
+{
+    text-align: center;
+    position: relative;
+    top: 230px
+}
+
+.cover header .bx-wrapper .bx-viewport
+{
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: 100% !important
+}
+
+.cover header .bxslider li h1
+{
+    margin-top: 0;
+    font-size: 50px;
+    color: white
+}
+
+.cover header .bxslider li h1 span
+{
+    color: #1ABB9A
+}
+
+.cover header .bxslider li p
+{
+    margin: 2px;
+    font-size: large;
+    color: white
+}
+
+.cover header button
+{
+    background-color: transparent;
+    padding: 10px 15px;
+    border: 1px solid white;
+    color: white;
+    margin-top: 160px;
+    cursor: pointer
+}
+
+/* End Header */
+
+/* End Cover */
+
+/*****************************************************************/
+
+/* Start Services */
+
+.services .container{overflow: auto}
+
+.services h2
+{
+    margin: 80px 0 50px;
+    color: #494646
+}
+
+.services section
+{
+    float: left;
+    width: 31%;
+    overflow: auto;
+    margin-right: 2.333%;
+    margin-bottom: 25px
+}
+
+.services section div
+{
+    float: left;
+    width: 80%
+}
+
+.services section div:first-of-type
+{
+    width: 20%
+}
+
+.services section div i
+{
+    font-size: 50px;
+    color: #19BD9B;
+    margin-top: 20px
+}
+
+.services section .phone i
+{
+    font-size: 100px;
+    margin-top: 8px
+}
+
+/* End Services */
+
+/*****************************************************************/
+
+/* Start Team */
+
+.team .our-team .container {overflow: auto}
+
+.team .our-team .info
+{
+    float: left
+}
+
+.team .our-team .pic
+{
+    float: left;
+    overflow: auto
+}
+
+.team .our-team .info {width: 40%}
+
+.team .our-team .pic {width: 60%}
+
+.team .our-team .info p
+{
+    font-size: 16px;
+    line-height: 23px
+}
+
+.team .our-team .pic ul
+{
+    margin: 15px 0 0;
+    float: right
+}
+
+.team .our-team .pic ul li
+{
+    margin-left: 10px;
+    width: 170px;
+    height: 170px;
+    position: relative
+}
+
+.team .our-team .pic ul li img
+{
+    width: 100%;
+    height: 100%
+}
+
+.team .our-team .pic ul li:hover .over
+{
+    display: block !important
+}
+
+/* End Team */
+
+
+/* Start Testimonials */
+
+.testi .me
+{
+    margin-top: 60px;
+    text-align: center;
+    height: 390px;
+    position: relative;
+    background-image: url('../img/p6.jpg');
+    background-size: cover
+}
+
+.testi .me .overlay .container
+{
+    position: relative;
+    top: 60px
+}
+
+.testi .me .slider div { display: none }
+
+.testi .me .slider .active { display: block }
+
+.testi .me h2
+{
+    color: white;
+    margin-bottom: 70px
+}
+
+.testi .me h2 span
+{
+    padding-bottom: 5px;
+    border-bottom: 1px solid white
+}
+
+.testi .me p
+{
+    color: white;
+    line-height: 30px
+}
+
+.testi .me p sup
+{
+    color: #26A68D;
+    font-size: 20px
+}
+
+.testi .me .slider div h3
+{
+    color: #26A68D;
+    margin-top: 50px
+}
+
+/* End Testimonials */
+
+/*************************************************/
+
+/* Start Projects */
+
+.project { padding-top: 30px }
+
+.project .type{overflow: auto}
+
+.project h2
+{
+    margin-bottom: 40px
+}
+
+.project .type ul
+{
+    float: left;
+}
+
+.project .type ul li
+{
+    margin-right: 5px;
+    font-size: large;
+    color: #9D9D9D;
+    border: 1px solid #9D9D9D;
+    padding: 10px 20px
+}
+
+.project .type ul li:hover
+{
+    cursor: pointer;
+    background-color: #1BBC9B;
+    color: white;
+    border: 1px solid #1BBC9B
+}
+
+.type-active
+{
+    background-color: #1BBC9B;
+    color: white !important;
+    border: 1px solid #1BBC9B !important
+}
+
+.mix
+{
+    display: none
+}
+
+.project .ex {margin-top: 40px}
+
+.project .ex .row {margin-bottom: 20px; overflow: hidden}
+
+.project .ex .row > div
+{
+    float: left;
+    width: 32.6666%;
+    height: 210px;
+    position: relative
+}
+
+.project .ex .row > div:nth-child(2) { margin: 0 1% }
+
+.project .ex .row > div img
+{
+    width: 100%;
+    height: 100%
+}
+
+.project .ex .row >div:hover .over
+{
+    display: block;
+    line-height: 210px
+}
+
+.project .ex .row >div:hover .over span
+{
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+.project .ex .row >div:hover .over i
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer
+}
+
+.project .ex .row >div:hover .over i span
+{
+    font-size: 15px;
+    padding: 0;
+    border: none
+}
+
+/* End Projects */
+
+/********************************************/
+
+/* Start Footer */
+
+.footer
+{
+    background-color: #262525;
+    padding-top: 80px
+}
+
+.footer .container { overflow: auto }
+
+.footer h3 { color: white }
+
+.footer section
+{
+    float: left;
+    width: 25%
+}
+
+.footer .about p
+{
+    color: #757575;
+    font-size: 14px
+}
+
+.footer .about .links {margin-top: 40px}
+
+.footer .about .links i
+{
+    border: 1px solid #757575;
+    padding: 10px 15px;
+    color: #757575;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.footer .about p:last-of-type
+{
+    margin-top: 80px
+}
+
+.footer .tag ul li
+{
+    border: 1px solid #757575;
+    padding: 5px 10px;
+    font-weight: lighter;
+    font-size: small;
+    color: #AAA7A7;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    cursor: pointer
+}
+
+.footer .post
+{
+    overflow: auto
+}
+
+.footer .post > div { float: left; margin-bottom: 10px }
+
+.footer .post > div img, .footer .post > div div
+{
+    float: left
+}
+
+.footer .post > div img
+{
+    width: 80px;
+    height: 100%;
+    margin-right: 15px;
+    cursor: pointer
+}
+
+.footer .post > div p
+{
+    font-size: small
+}
+
+.footer .post > div span
+{
+    font-size: small;
+    color: white
+}
+
+.footer .categorey p
+{
+    color: #757575;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: small
+}
+
+.footer .categorey hr
+{
+    margin: 0;
+    color: #282828 !important
+}
+
+/* End Footer */
