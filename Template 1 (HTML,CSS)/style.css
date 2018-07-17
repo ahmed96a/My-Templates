@@ -1,0 +1,393 @@
+body {background-color: #222}
+
+.container { width: 900px; margin: auto}
+
+hr {color: #F7F7F7}
+
+p {font-size: 11px; color: #ADADAD}
+
+h2,h3,h4,h5 {color: #545E60;}
+
+/*            My FramWork          */
+.my-button
+{
+    color: #41BF82;
+    border:2px solid #41BF82;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-size: 11px;
+    background-color: white ;
+    cursor: pointer
+}
+
+.fl-left {float: left}
+
+/*          End My FramWork          */
+
+
+/* Start                        Header                          */
+
+/* Strat (Slider) */
+
+.slider {height: 600px; text-align: center; background-image: url('images/webdesigner.jpg')}
+
+.slider h1
+{
+    width: 445px; border-top: 2px solid white;
+    border-bottom: 2px solid white; margin: 0 auto
+}
+
+.slider button
+{
+    font-size: 11px;
+    background: transparent;  /* background: none; */
+    width: 105px;
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 10px;
+    cursor: pointer
+}
+
+.slider h1, .slider button {color: white; position: relative; top: 250px}
+
+/* End (Slider) */
+
+/* Start (navbar) */
+
+.navbar {background-color: #252F31; color: white; overflow: hidden}
+
+.navbar h3
+{
+    color: white;
+    float: left;
+    margin: 0;
+    padding-top: 12px;
+    position: relative;
+    left: 100px
+}
+
+.navbar h3:first-letter {background-color: #4D5759; padding: 2px 5px; margin-right: 10px}
+
+.navbar h3 span {color: #1AA262;}
+
+.navbar ul
+{
+    list-style-type: none;
+    padding-left: 0;
+    float: right;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+    right: 115px
+}
+
+.navbar ul li {float: left; padding: 0 10px 5px 10px; font-size: 11px}
+
+.navbar ul li a {text-decoration: none; color: white}
+
+.navbar ul li a:hover, .navbar .active a {cursor: pointer; color: #1AA262}
+
+/* End (navbar) */
+
+/*                             End Header                      */
+
+
+
+/*                             Start Page1                        */
+
+
+/* Start (features) */
+
+.features {height: 195px; background-color: white; overflow: hidden}
+
+.features div
+{
+    color: #545E60;
+    margin-right: 20px;
+    font-size: 14px;
+    position: relative;
+    left: 90px;
+    top: 30px
+}
+
+/* End features */
+
+/* Start about-me */
+
+.about-me {background-color: #F2F2F2; overflow: hidden}
+
+/*****************/
+
+.about-me .image {float: left; width: 40%}
+
+.about-me .image img {width: 100%}
+
+/****************/
+
+.about-me .about {float: left; width: 60%}
+
+.about-me .about h3 {font-size: 16px; margin-left: 60px; margin-top: 60px}
+
+.about-me .about p {margin-left: 60px}
+
+/*******************************/
+/*
+.about-me .matters {height: 226px; width: 60%; float: right; overflow: hidden}
+
+.about-me .matters div {float: left; margin-left: 40px; position: relative; bottom: 30px}
+
+.about-me .matters h3 {font-size: 12px; margin-left: 60px; margin-top: 60px}    
+
+.about-me .matters p {margin-left: 60px; position: relative; bottom: 30px}
+
+.about-me .matters i {}
+*/
+/*
+.about-me .matters .web {background: url('images/web.png') no-repeat 10% 55%}
+
+.about-me .matters .graphic {background: url('images/graphic.png') no-repeat 10% 55%}
+
+.about-me .matters .online {background: url('images/online.png') no-repeat 10% 55%}
+
+.about-me .matters .seo {background: url('images/seo.png') no-repeat 10% 55%}
+*/
+
+/*******************************/
+
+.about-me .matters {width: 54%; float: right; overflow: hidden; margin-left: 30px}
+
+.about-me .matters >div {float: left; overflow: hidden; width: 50%}
+
+.about-me .matters div .icon {float: left; width: 15%; margin-top: 10px}
+
+.about-me .matters div .text {float: left; width: 85%}
+
+.about-me .matters h3 {font-size: 12px}
+
+.about-me .matters div .icon i {color: #2CC366}
+
+/*******************************/
+/*  End about-me   */
+
+
+/*                             End Page1                         */
+
+/*                            Start Page2                         */
+
+
+.skills {background-color: white; height: 350px; overflow: hidden}
+
+/***********************/
+
+.skills .myskills {width: 35%; float: left; margin-left: 120px; margin-top: 40px}
+
+.skills .myskills h3 {font-size: 17px}
+
+/****************************/
+
+.skills .tech {float: left}
+
+.skills .tech dl {position: relative; top: 60px}
+
+.skills .tech dl dt {font-size: 13px; color: #545E60; padding-left: 40px; padding-bottom:4px}
+
+.skills .tech dl dd {width: 350px; margin-bottom: 25px; background-color: #F2F2F2; height: 18px}
+
+.skills .tech dl dd span
+{
+    display: block;
+    height: 18px;
+    background-color: #2CCB6F;
+    color: white;
+    text-align: right;
+    font-size: small
+}
+
+/****************************/
+
+.resume {height: 235px; background-color: #F2F2F2; text-align: center; overflow: hidden}
+
+.resume h3 {font-size: 15px; position: relative; top: 25px}
+
+/**********************************/
+
+/*                           End page 2                           */
+
+
+/*                           Start page3                          */
+
+/***********************/
+
+.educat {background-color: white; overflow: hidden}
+
+/***********************/
+
+.educat .education {width: 35%; float: left; position: relative; left: 120px; top: 40px}
+
+.educat .education h3 {font-size: 17px}
+
+/***********************/
+
+.educat .sorts {float: left; position: relative ;left: 170px}
+
+.educat .sorts h5 {margin-bottom: -8px}
+
+.educat .sorts span
+{
+    color: white;
+    border: 1px solid #35CA70;
+    font-weight: bold;
+    font-size: 9px;
+    padding: 3px;
+    background-color: #35CA70
+}
+
+/********************/
+
+
+/*                         End Page3                         */
+
+
+/*                        Start Page4                        */
+
+.work {height: 640px; background-color: white; overflow: hidden}
+
+/**********************/
+
+.work .workexperience {width: 35%; float: left; position: relative; left: 120px; top: 40px;}
+
+.work .workexperience h3 {font-size: 17px;}
+
+/***********************/
+
+.work .sorts {float: left; position: relative; left: 170px; top: 70px}
+
+.work .sorts h5 {margin-bottom: -8px}
+
+.work .sorts span
+{
+    color: white;
+    border: 1px solid #35CA70;
+    font-weight: bold;
+    font-size: 9px;
+    padding: 3px;
+    background-color: #35CA70
+}
+
+/********************/
+
+.comment {text-align: center; background-color: #F2F2F2; height: 235px}
+
+.comment h5 {font-size: 12px; margin-top: 65px}
+
+.comment q {color: #A6A6A6; font-size: 14px; position: relative; top: 45px}
+
+.comment ul {list-style-type: none; padding-left: 0}
+
+.comment ul li {border: 1px solid green; width: 15px; height: 15px; display: inline-block}
+
+.comment ul .act {background-color: green}
+
+.comment ul li:hover {background-color: green; cursor: pointer}
+
+/*                        End Page4                          */
+
+
+
+/*                        Start Page5                        */
+
+.port {background-color: white; text-align: center; overflow: hidden; height: 740px}
+
+.port h4 {padding-top: 35px}
+
+.port ul
+{
+   padding: 20px 20px 20px 0;
+   text-align: center;
+   background-color: #252F31;
+   list-style-type: none;
+   padding-left: 0;
+   overflow: hidden
+}
+
+.port ul li {width: 33.3333%; float: left}
+
+.port ul li img {width: 200px; height: 160px}
+
+/*                          End Page5                        */
+
+/*                          Start Form                       */
+
+.form  {height: 475px; background-color: #252F31; overflow: hidden}
+
+/**********************************/
+
+.form .contact {float: left;position: relative;left: 120px;top: 30px}
+
+.form .contact h4 {color: white;}
+
+.form .contact p {color: #6E7376;font-size: 11px}
+
+.form .contact p span{color: white}
+
+/**********************************/
+.form .form1 
+{
+    float: right;
+    font-size: 11px;
+    color: white;
+    position: relative;
+    right: 110px;
+    top: 80px
+}
+
+.form .form1  input
+{
+    background-color: #4B5557;
+    border: 1px solid #4B5557;
+    height: 28px;
+    width: 305px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+.form .form1 textarea
+{
+    background-color: #4B5557;
+    border: 1px solid #4B5557;
+    margin-top: 5px;
+    margin-bottom: 10px
+}
+
+.form .form1 .contact-me
+{
+    font-weight: bold;
+    background-color: #191E22;
+    border: 1px solid #191E22;
+    color: white;
+    width: 100px;
+    height: 35px;
+    cursor: pointer
+}
+/***********************************/
+.end
+{
+    height: 70px;
+    background-color: #191E22;
+    text-align: center;
+    font-size: 7px;
+    color: #6E7376;
+    padding-top: 10px
+}
+
+/* .end .linked img {width: 3%} */
+
+.end .image a i
+{
+   color: #4C5658;
+   padding-right: 5px
+}
+
+.end .image a:hover {cursor: pointer}
+
+/*                             End Form                      */
