@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Meta For Internet Explorer Comptability -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- First Mobile Meta{https://www.w3schools.com/css/css_rwd_viewport.asp} -->
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Hi BootStrap">
+        <title>About</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages-style.css">
+        
+        <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+        
+        <style></style>
+    </head>
+    <body>
+        
+<!--        Start nav       -->
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <!-- that button appears in the xs and sm screens and when we click it , it displays the div#bs-example-navbar-collapse-1 in that data-target  -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!-- we can remove the four spans and replace them with text or other span -->
+                      </button>
+
+                    <a class="navbar-brand" href="#">Troy</a>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="Main.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <!-- added by us -->
+
+                        <li class="dropdown">
+                            <!-- dropdown list -->
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Web Designing</a></li>
+                                <li><a href="#">Web Developping</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Supporting</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Testing</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    
+                    <!-- our option box -->
+                    
+                    <ul class="nav navbar-nav navbar-right myoption">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle mygear" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-gear fa-2x"></i><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <h5>Color Option:</h5>
+                                    <span class="gold"></span>
+                                    <span class="red"></span>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <h5>This is color option box </h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </nav>
+
+<!--        End nav        -->
+        
+        
+        
+<!--        Start BreadCrump        -->
+        
+        <div class="breadcrumb-holder"> <!-- https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
+            <div class="container">
+                <ol class="breadcrumb">
+                  <li><a href="Main.html">Home</a></li>
+                  <li class="active">About</li>
+                </ol>
+            </div>
+        </div>
+        
+<!--        End BreadCrump        -->
+        
+        
+<!--        Start Intro Section     -->
+        
+        <section class="myaboutintro text-center">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <img class="img-thumbnail" src="imgs/about-page/team.png" alt="team">
+            </div>
+        </section>
+        
+<!--        End Intro Section     -->
+        
+<!--        Start About Features        -->
+        
+        <section class="myaboutfeatures text-center">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <i class="fa fa-code fa-3x"></i>
+                        <h3>Codeing</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <i class="fa fa-child fa-3x"></i>
+                        <h3>Happying</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <i class="fa fa-group fa-3x"></i>
+                        <h3>Networking</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+<!--        End About Features      -->
+        
+        
+<!--        Start CEO Section       -->
+        
+        <section class="myceo">
+            <div class="container">
+                
+                <div class="col-sm-5">
+                    <img src="imgs/about-page/ceo.jpg" alt="ceo" class="img-responsive">
+                </div>
+                
+                <div class="col-sm-7">
+                    <h3>We are happy to help you</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen bookLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    <a class="btn btn-primary">Contact Us</a>
+                </div>
+                
+            </div>
+        </section>
+        
+<!--        End CEO Section       -->
+        
+        
+<!--        Start Footer        -->
+        
+        
+        <section class="myfooter">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <h3>SiteMap</h3>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Company</li>
+                            <li>Code</li>
+                            <li>Design</li>
+                            <li>Host</li>
+                            <li>Solutions</li>
+                            <li>Sitemap</li>
+                            <li>Contact</li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><img src="imgs/links/face.png" alt="face"></li>
+                            <li><img src="imgs/links/twitter.png" alt="twitter"></li>
+                            <li><img src="imgs/links/instagram.png" alt="instagram"></li>
+                            <li><img src="imgs/links/google-plus.png" alt="googleplus"></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Done Using Media Object Component { https://getbootstrap.com/docs/3.3/components/#media } --> 
+                    <div class="col-lg-4 col-md-6">
+                        <h3>Latest Articles</h3>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/1.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Programming Future</h4>
+                            <p>This is some text about programming future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/2.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Reading Future</h4>
+                            <p>This is some text about Reading future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/3.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Green Energy Future</h4>
+                            <p>This is some text about Green Energy future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12">
+                        <div class="mywork">
+                            <h3>Our Awesome Work</h3>
+                            <img src="imgs/w1.png" alt="work1" style="width: 150px">
+                            <img src="imgs/w2.jpg" alt="work2" style="width: 150px">
+                            <img src="imgs/w3.jpg" alt="work3" style="width: 150px">
+                            <img src="imgs/w4.png" alt="work4" style="width: 150px">
+                        </div>     
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="myfoot">
+                Copyright &copy; 2018 <span>Troy</span> By Asd
+            </div>
+            
+        </section> 
+        
+        
+<!--        End Footer        -->
+        
+        
+        
+<!--        Start Scroll Top      -->
+        
+        <!-- we search for css3 spinners in google like that site { https://loading.io/css/ } -->
+        <section class="myscrolltop">
+            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        </section>
+        
+<!--        End Scroll Top        -->        
+        
+        
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <script></script>
+    </body>
+</html>

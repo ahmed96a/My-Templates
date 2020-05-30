@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Meta For Internet Explorer Comptability -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- First Mobile Meta{https://www.w3schools.com/css/css_rwd_viewport.asp} -->
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Hi BootStrap">
+        <title>FAQ</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages-style.css">
+        
+        <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+        
+        <style></style>
+    </head>
+    <body>
+        
+<!--        Start nav       -->
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="container-fluid">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+
+                    <!-- that button appears in the xs and sm screens and when we click it , it displays the div#bs-example-navbar-collapse-1 in that data-target  -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <!-- we can remove the four spans and replace them with text or other span -->
+                      </button>
+
+                    <a class="navbar-brand" href="#">Troy</a>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="Main.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="faq.html">FAQ</a></li>
+                        <!-- added by us -->
+
+                        <li class="dropdown">
+                            <!-- dropdown list -->
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Web Designing</a></li>
+                                <li><a href="#">Web Developping</a></li>
+                                <li><a href="#">Graphics</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Supporting</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Testing</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    
+                    <!-- our option box -->
+                    
+                    <ul class="nav navbar-nav navbar-right myoption">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle mygear" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-gear fa-2x"></i><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <h5>Color Option:</h5>
+                                    <span class="gold"></span>
+                                    <span class="red"></span>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <h5>This is color option box </h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </nav>
+
+<!--        End nav        -->
+        
+        
+        
+<!--        Start BreadCrump        -->
+        
+        <div class="breadcrumb-holder"> <!-- https://getbootstrap.com/docs/3.3/components/#breadcrumbs -->
+            <div class="container">
+                <ol class="breadcrumb">
+                  <li><a href="Main.html">Home</a></li>
+                  <li class="active">FAQ</li>
+                </ol>
+            </div>
+        </div>
+        
+<!--        End BreadCrump        -->
+        
+        
+<!--        Start Intro Section     -->
+        
+        <section class="faqintro text-center">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+                <hr>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            </div>
+        </section>
+        
+<!--        End Intro Section     -->
+        
+        
+<!--        Start FAQ Accordin      -->
+        
+        <section class="faq-questions"> <!-- https://getbootstrap.com/docs/3.3/javascript/#collapse-example-accordion -->
+            <div class="container">
+                
+                <h3>Our BootStrap 3.3.0 Accordin : </h3>
+                
+                <!-- Start panel-group (Accordin) -->
+                
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    
+                    <!-- Start Question 1 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">#1- How to use bootstrap 1?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Question 1 -->
+                    
+                    <!-- Start Question 2 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">#2- How to make bootstrap Accordin?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Question 2 -->
+                    
+                    <!-- Start Question 3 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">#3- How to make Accordin Style?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Question 3 -->
+                    
+                </div>
+                
+                <!-- End panel-group (Accordin) -->
+                
+                <!-- Start Our Accordin -->
+                
+                <h3>Our Made Accordin : </h3>
+                
+                <div class="myaccord">
+                    <div class="myquest">
+                        <h4>#1- How Are you?</h4>
+                        <div class="myanswer">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                    
+                    <div class="myquest">
+                        <h4>#2- How to make bootstrap Accordin?</h4>
+                        <div class="myanswer">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                    
+                    <div class="myquest">
+                        <h4>#3- How to make Accordin Style?</h4>
+                        <div class="myanswer">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- End Our Accordin -->                
+            </div>
+        </section>
+        
+<!--        End FAQ Accordin        -->
+        
+        
+
+        
+        
+<!--        Start Footer        -->
+        
+        
+        <section class="myfooter">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <h3>SiteMap</h3>
+                        <ul class="list-unstyled">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Company</a></li>
+                            <li><a>Code</a></li>
+                            <li><a>Design</a></li>
+                            <li><a>Host</a></li>
+                            <li><a>Solutions</a></li>
+                            <li><a>Sitemap</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><img src="imgs/links/face.png" alt="face"></li>
+                            <li><img src="imgs/links/twitter.png" alt="twitter"></li>
+                            <li><img src="imgs/links/instagram.png" alt="instagram"></li>
+                            <li><img src="imgs/links/google-plus.png" alt="googleplus"></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Done Using Media Object Component { https://getbootstrap.com/docs/3.3/components/#media } --> 
+                    <div class="col-lg-4 col-md-6">
+                        <h3>Latest Articles</h3>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/1.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Programming Future</h4>
+                            <p>This is some text about programming future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/2.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Reading Future</h4>
+                            <p>This is some text about Reading future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                        <div class="media">
+                          <div class="media-left">
+                            <a href="#">
+                              <img class="media-object" src="imgs/articles/3.png" alt="1">
+                            </a>
+                          </div>
+                            
+                          <div class="media-body">
+                            <h4 class="media-heading">Green Energy Future</h4>
+                            <p>This is some text about Green Energy future with bootstrap 3.3 Media object components</p>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12">
+                        <div class="mywork">
+                            <h3>Our Awesome Work</h3>
+                            <img src="imgs/work/w1.png" alt="work1" style="width: 150px">
+                            <img src="imgs/work/w2.jpg" alt="work2" style="width: 150px">
+                            <img src="imgs/work/w3.jpg" alt="work3" style="width: 150px">
+                            <img src="imgs/work/w4.png" alt="work4" style="width: 150px">
+                        </div>     
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="myfoot">
+                Copyright &copy; 2018 <span>Troy</span> By Asd
+            </div>
+            
+        </section> 
+        
+        
+<!--        End Footer        -->
+        
+        
+        
+<!--        Start Scroll Top      -->
+        
+        <!-- we search for css3 spinners in google like that site { https://loading.io/css/ } -->
+        <section class="myscrolltop">
+            <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+        </section>
+        
+<!--        End Scroll Top        -->        
+        
+        
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugin.js"></script>
+        <script></script>
+    </body>
+</html>
