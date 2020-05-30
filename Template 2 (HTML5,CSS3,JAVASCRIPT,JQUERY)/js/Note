@@ -1,0 +1,2 @@
+There is two files in js folder, one is the Plugin.js and that contain the jQuery code, the other file is Js.js and that contain the javascript code
+that we can use instead of Plugin.js file.
